@@ -1,8 +1,34 @@
-# CHANGELOG
+# CHANGELOG — Operit 自制 Skills
 
-> 这个文件最初存于 `/sdcard/Download/Operit/search_vault/self-made-skills-releases/CHANGELOG.md`，每个版本都有对应的 tar.gz 存档。现在搬到 GitHub，一字不改。
+## v2.1.0 (2026-06-25)
 
----
+### sandbox-package-creator（~423行，结构优化+知识扩容）
+
+**触发收紧 + 入口分流：**
+
+- **修改 description**：加护栏——「仅在用户明确表达想做沙盒包/工具/脚本或主动要求了解沙盒包概念时触发。日常聊天、天气、闲聊不触发。」不相关场景不占上下文。
+- **新增 自检镜⑤**：「我看不懂术语，先给我看个例子」→ AI 跳过淘汰链和术语轰炸，直接打开真实沙盒包指认每部分。从免免学沙盒包撞墙的经历来——理科不及格也能学，先摸到东西再理解概念。
+
+**Bug 预判大扩容 —— 3.1 节重写（13条→30条）：**
+
+- **来源扩展**：原有 Search Vault QAQ.md + LOGIC.md，新增 BUGSJS 学术分类学（453个真实JS bug）、QuickJS 真实 CVE 记录、TypeScript 生态 bug 研究（633个bug的fault taxonomy）。
+- **新增严重程度标注**：🔴致命(4) / 🟠高危(8) / 🟡中危(10) / 🟢低危(5) / 🔵QuickJS特有(3)
+- **新增双路径决策**：每条 bug 给出「路径A：转良性特性」和「路径B：修复思路参考」——不是规定是地图。19/30条可转良性特性。
+- **理论补入12条**：竞态条件、Promise rejection 未处理、正则回溯(ReDoS)、内存泄漏、浮点精度、闭包过期变量、this 丢失、API 误用、配置漂移、整数溢出(CVE)、Promise.race 未取消、文档与行为不一致。
+
+**设计原则（来自免免原话）：**
+> 「让别人知道 bug 但别让别人不知道这 bug 到底是怎么样的。」
+> 「可良性的 bug 可以基于适合的情况来修，不良性的给几个合适的修复思路。」
+> 「不是所有 bug 都要修——有些可以转为良性特性，只要文档里说清楚为什么。」
+
+### 全版本对照
+```
+ v1.0  118行  骨架：Explore→Diagnose→Confirm→Develop + 13条bug预判
+ v1.1  150行  +自由判断边界 +常见手误 +自测清单
+ v1.2  214行  +Shape阶段 +淘汰链
+ v2.0  423行  协作协议/愿望节/反向追问/兼容层级/Develop五节/QuickJS陷阱
+ v2.1  ~440行  触发护栏 + 自检镜⑤ + Bug预判13→30条 + 严重度 + 双路径
+ ```
 
 ## v2.0.0 (2026-06-25)
 
@@ -32,8 +58,6 @@ v1.2  214行  +Shape阶段（需求本质/形态选择/用户画像/演进路线
 v2.0  423行  上面这个版本
 ```
 
----
-
 ## v1.2.0 (2026-06-25)
 
 ### sandbox-package-creator
@@ -46,8 +70,6 @@ v2.0  423行  上面这个版本
 - **修改** 编号体系：Shape→1, Explore→2, Diagnose→3, Confirm→4, Develop→5（子编号同步调整）
 - **修改** 描述与开篇引言：强调"最贵的错误不是代码bug，是做完发现方向错了"
 
----
-
 ## v1.1.0 (2026-06-25)
 
 ### sandbox-package-creator
@@ -57,17 +79,13 @@ v2.0  423行  上面这个版本
 - **新增**「交付前自测」清单：6条最小验证（正常输入/错误输入/超时/HTTP错误/tsc编译/脚本跑通）
 - **修改** Bug预判来源标注：引用Search Vault的QAQ.md和LOGIC.md，避免维护两套
 
----
-
 ## v1.0.0 (2026-06-25)
 
-### sandbox-package-creator
+### 新增
 
 - **sandbox-package-creator**：元Skill——创建Operit沙盒包。
   四阶段流程：Explore（扫描现有包/examples/types）→ Diagnose（对照13条通用bug预判 + 6条优化借鉴，AI自主判断适用性）→ Confirm（分步确认A/B/C，不一次性抛问题）→ Develop（引用SandboxPackage_DEV，tsc编译，交付前自测）。
   内含 Search Vault v2.0.1→v4.0-ultra 跨15+版本的13条实测bug修复经验（代码残留、缓存不生效、空值无fallback、版本比较用字符串、资源泄漏等），通用适配所有沙盒包开发。
-
-### operit-meta-guide
 
 - **operit-meta-guide**：Operit元认知指南——AI醒来的第一份地图。
   覆盖：三类执行器（Skill/MCP/沙盒包）判断规则、四个元Skill调用链、记忆系统使用方式、自举原则（缺什么造什么）。
