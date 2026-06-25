@@ -1,5 +1,7 @@
 # CHANGELOG — Operit 自制 Skills
 
+> **当前最新版本：v2.5.0 (2026-06-26)** — sandbox-package-creator ~630行，形态区别表 + 受众维度 + 44条Bug + 5.0第一次创建必读。v1.0→v2.5 全版本谱系见下方。
+
 ## v2.5.0 (2026-06-26)
 
 ### sandbox-package-creator（~440行→~630行，+43%，内核大补全）
