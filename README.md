@@ -75,7 +75,7 @@
 - Develop 阶段从 2 节扩展为 5 节
 - 演进路线从单线扩展为双分叉（深耕 vs 重构）
 
-完整变更见 [CHANGELOG](../../search_vault/self-made-skills-releases/CHANGELOG.md)。
+完整变更见 [CHANGELOG](./CHANGELOG.md)。
 
 ## 许可
 
