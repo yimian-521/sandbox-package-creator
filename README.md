@@ -75,6 +75,20 @@
 
 完整变更见 [CHANGELOG](./CHANGELOG.md)。
 
+### 历史版本
+
+所有旧版 SKILL.md 收录在 [`archive/`](./archive/) 目录——从 v1.0 骨架到 v2.0，逐版可对照：
+
+| 版本 | 行数 | 关键里程碑 |
+|------|------|-----------|
+| [v1.0.0](./archive/SKILL-v1.0.0.md) | 118 | 四阶段骨架：Explore→Diagnose→Confirm→Develop + 13条Bug预判 |
+| [v1.1.0](./archive/SKILL-v1.1.0.md) | 150 | +自由判断边界 +常见手误 +自测清单 |
+| [v1.2.0](./archive/SKILL-v1.2.0.md) | 214 | +Shape阶段 +淘汰链 |
+| [v2.0.0](./archive/SKILL-v2.0.0.md) | 423 | +协作协议 +愿望节 +兼容层级 +QuickJS陷阱 |
+| [v2.5.0](./SKILL.md) | ~630 | +形态区别表 +受众维度 +44条Bug +5.0必读 |
+
+> 点击版本号直接在 GitHub 上浏览对应文件。
+
 ## 许可
 
 参见 [LICENSE](./LICENSE)。
