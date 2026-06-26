@@ -1,6 +1,12 @@
 # CHANGELOG — Operit 自制 Skills
 
-> **当前最新版本：v2.6.0 (2026-06-26)** — sandbox-package-creator 722行，设计耦合族：15条Bug按8族归类（自指/阻断/新旧/去重/阈值/诊断/初始化/媒介）。v1.0→v2.6 全版本谱系见下方。
+> **当前最新版本：v2.7.0 (2026-06-26)** — sandbox-package-creator 725行，沙盒包≠沙盒——substrate错位概念框；设计耦合族：15条Bug按8族归类。v1.0→v2.7全版本谱系见下方。
+
+## v2.7.0 (2026-06-26)
+
+### sandbox-package-creator — 沙盒包≠沙盒：substrate错位概念框（722行→725行）
+
+**核心新增：** 在1.3.1节末尾插入「沙盒包≠沙盒」硬区分框。沙盒（Docker/WASM/iframe/Node vm — OS级隔离容器）≠沙盒包（Operit QuickJS .js/.toolpkg — 平台轻量脚本单元）。WASM QuickJS是最通用的substrate但不是唯一的。步骤对、语法对、substrate不对→中转站不认。
 
 ## v2.6.0 (2026-06-26)
 
