@@ -1,4 +1,4 @@
-# GLOSSARY — sandbox-package-creator v2.0
+# GLOSSARY — sandbox-package-creator v2.6
 
 本文件解释 SKILL.md 中出现的核心术语。按章节顺序排列，便于对照阅读。
 
@@ -98,4 +98,4 @@ Develop 完成后的 8 条验证项。比 v1.2 的 6 条增加了性能基准测
 
 ---
 
-*GLOSSARY 随 SKILL.md 同步更新。术语首次出现于 v2.0.0 (2026-06-25)。*
+*GLOSSARY 随 SKILL.md 同步更新。最新更新于 v2.6.0 (2026-06-26)。*
